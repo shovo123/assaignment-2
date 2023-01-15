@@ -1,0 +1,1128 @@
+/* *=========== google fonts ===========* */
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;900&family=Lobster&display=swap");
+
+/* *=========== default css ===========* */
+
+:root {
+  --clr-primary-cursed-black: #131313;
+  --clr-secondary-dull: #727272;
+  --clr-third-laddu-orange: #ff900e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  /* convert 1em = 10px */
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-width {
+  max-width: 192em;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 2.8em;
+  color: var(--clr-primary-cursed-black);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.primary-btn {
+  border: 0.1em solid transparent;
+  outline: none;
+  background-color: var(--clr-third-laddu-orange);
+  color: #fff;
+  font-weight: 500;
+  padding: 1em 1.5em;
+  text-transform: capitalize;
+  font-size: 1.6em;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  transition: 0.3s ease-in-out;
+}
+
+.primary-btn:hover {
+  background-color: transparent;
+  color: var(--clr-third-laddu-orange);
+  border: 0.1em solid var(--clr-third-laddu-orange);
+}
+
+/* *=========== header section css ===========* */
+
+header {
+  padding: 4em 24em;
+  background-color: rgba(255, 144, 14, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+.bars {
+  display: none;
+}
+
+header h2 a,
+footer h2 a {
+  font-family: "Lobster", cursive;
+  font-size: 2.1em;
+  color: var(--clr-primary-cursed-black);
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+}
+
+header h2 span,
+footer h2 span {
+  color: var(--clr-third-laddu-orange);
+  text-transform: lowercase;
+}
+
+.header-nav li a {
+  font-size: 1.6em;
+  text-transform: capitalize;
+  color: var(--clr-primary-cursed-black);
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.header-nav li a:hover {
+  color: var(--clr-third-laddu-orange);
+}
+
+/* *=========== header banner section css ===========* */
+
+.header-banner {
+  padding: 1em 24em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.banner-text {
+  width: 70em;
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 4.5em;
+  color: var(--clr-primary-cursed-black);
+  font-weight: 700;
+}
+
+.banner-text p {
+  color: var(--clr-secondary-dull);
+  font-weight: 400;
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+.banner-text button {
+  margin-bottom: 1em;
+}
+
+.banner-img img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+/* *=========== mobile nav section css ===========* */
+.mobile-nav-section {
+  display: none;
+}
+
+/* *=========== features section css ===========* */
+
+.features-section {
+  padding: 1em 24em;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+.feature-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+.feature-img img {
+  width: 30.2em;
+  height: 30.2em;
+  border-radius: 0.5em;
+  object-fit: cover;
+}
+
+.feature-text h3 {
+  font-size: 3.6em;
+  font-weight: 400;
+  color: var(--clr-secondary-dull);
+}
+
+.feature-text h3 span:nth-of-type(1) {
+  color: var(--clr-primary-cursed-black);
+  font-weight: 700;
+}
+
+.feature-text h3 span:nth-of-type(2) {
+  color: var(--clr-third-laddu-orange);
+  font-weight: 700;
+}
+
+.feature-text p {
+  color: var(--clr-secondary-dull);
+  font-size: 1.4em;
+  margin: 1.5em 0;
+}
+
+/* *=========== service info section css ===========* */
+
+.service-info-section {
+  padding: 5em 24em;
+  display: flex;
+  justify-content: space-between;
+  gap: 5em;
+}
+
+.service-info-text {
+  width: 48%;
+}
+
+.service-info-text h3 {
+  font-size: 3em;
+  border-left: 0.2em solid var(--clr-third-laddu-orange);
+  padding-left: 0.2em;
+}
+
+.service-info-text > p {
+  font-size: 1.4em;
+  color: var(--clr-secondary-dull);
+  font-weight: 400;
+  margin: 2em 1em 2em 0;
+}
+
+.architect-img {
+  position: relative;
+  width: 48%;
+}
+
+.architect-img img {
+  width: 46.8em;
+  height: 65em;
+  object-fit: contain;
+  border-radius: 0.1em;
+}
+
+.experience-display {
+  position: absolute;
+  text-align: center;
+  background-color: var(--clr-third-laddu-orange);
+  padding: 2em;
+  color: #fff;
+  border-radius: 0.5em;
+  bottom: 0;
+  margin-left: -2.6em;
+}
+
+.experience-display p {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.experience-display span {
+  font-size: 1.4em;
+}
+
+.service-info {
+  background-color: #fff;
+  box-shadow: 0 0.4em 3em rgba(0, 0, 0, 0.06);
+  padding: 2em;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+
+.service-info h5 {
+  font-size: 1.8em;
+  color: var(--clr-primary-cursed-black);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.service-info p {
+  font-size: 1.3em;
+  color: var(--clr-secondary-dull);
+  font-weight: 400;
+  margin: 0.8em 1em 0 0;
+}
+
+/* *=========== some facts section css ===========* */
+
+.some-facts {
+  padding: 4em 24em;
+}
+
+.some-facts p {
+  font-size: 1.4em;
+  color: var(--clr-secondary-dull);
+  font-weight: 400;
+  width: 30em;
+  margin-top: 1.2em;
+}
+
+.facts-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5em;
+}
+
+.single-fact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.2em solid var(--clr-third-laddu-orange);
+  padding: 2em 2.5em;
+  border-radius: 0.5em;
+  transition: all 0.5s ease;
+}
+
+.single-fact:hover {
+  background-color: #fff4e6;
+  transform: scale(1.1);
+}
+
+.single-fact img {
+  width: 4em;
+  height: 4em;
+}
+
+.single-fact span:nth-of-type(1) {
+  font-size: 2.8em;
+  font-weight: 600;
+  margin-top: 0.2em;
+  color: #424242;
+}
+
+.single-fact span:nth-of-type(2) {
+  font-size: 1.4em;
+  color: var(--clr-secondary-dull);
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 0.1em;
+}
+
+/* *=========== sponsor section css ===========* */
+
+.sponsor {
+  padding: 4em 24em;
+}
+
+.sponsor h3 {
+  text-align: center;
+}
+
+.sponsor p {
+  text-align: center;
+  color: var(--clr-secondary-dull);
+  font-weight: 400;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  font-size: 1.4em;
+  width: 35em;
+}
+
+.sponsor-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5em;
+}
+
+.sponsor-container img {
+  width: 12em;
+  height: 4em;
+}
+
+/* *=========== price list section css ===========* */
+
+.price-list {
+  padding: 4em 24em;
+}
+
+.price-list h3 {
+  text-align: center;
+}
+
+.price-list > p {
+  text-align: center;
+  color: var(--clr-secondary-dull);
+  font-weight: 400;
+  margin: 0 auto;
+  margin-top: 1.5em;
+
+  font-size: 1.4em;
+  width: 35em;
+}
+
+.price-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 8em;
+  gap: 4em;
+}
+
+.single-price {
+  background-color: #fff;
+  box-shadow: 0 0.4em 3em rgba(0, 0, 0, 0.06);
+  padding-bottom: 0;
+  width: 30%;
+  border-radius: 0.5em;
+  position: relative;
+}
+
+.single-price h3 {
+  text-align: center;
+  font-size: 2.3em;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 0.3em solid var(--clr-third-laddu-orange);
+  margin-top: 1em;
+}
+
+.single-price li {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-left: 10%;
+}
+
+.single-price li i {
+  margin-right: 1em;
+  font-size: 1.4em !important;
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-xmark {
+  color: red;
+}
+
+.single-price p {
+  background-color: orangered;
+  text-align: center;
+  padding: 1.2em 0;
+  color: #fff;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.single-price p:hover {
+  background-color: var(--clr-third-laddu-orange);
+}
+
+.single-price span {
+  position: absolute;
+  background-color: var(--clr-third-laddu-orange);
+  color: #fff;
+  font-size: 2.2em;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  padding: 0.3em 0.4em;
+  top: 0;
+  margin-top: 2.6em;
+  margin-left: -1em;
+  border-radius: 0.2em;
+}
+
+.single-price:nth-of-type(2) {
+  scale: 1.1;
+}
+
+/* *=========== footer section section css ===========* */
+
+footer {
+  padding: 4em 24em;
+  background-color: rgba(255, 144, 14, 0.1);
+  display: flex;
+  gap: 15em;
+}
+
+.footer-left {
+  width: 48%;
+}
+
+.footer-left p:nth-of-type(1) {
+  font-size: 1.3em;
+  color: var(--clr-secondary-dull);
+  margin: 1.2em 0;
+}
+
+.footer-left div a {
+  font-size: 2em;
+  margin-right: 0.5em;
+  color: var(--clr-primary-cursed-black);
+}
+
+.footer-left p:nth-of-type(2) {
+  margin-top: 1em;
+  font-size: 1.3em;
+  color: rgb(23, 23, 78);
+}
+
+.footer-right {
+  width: 48%;
+}
+.footer-right h5 {
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-top: 0.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+form input,
+textarea {
+  width: 100%;
+  outline: none;
+  padding: 1em;
+  border: 0.1em solid var(--clr-third-laddu-orange);
+  resize: none;
+
+  border-radius: 0.2em;
+}
+
+form button {
+  width: 10em;
+}
+
+/* *=========== mobile responsive section css ===========* */
+
+@media screen and (max-width: 576px) {
+  /* *===== header section css =====* */
+
+  .section-width {
+    width: 100%;
+  }
+
+  header {
+    padding: 2em;
+  }
+
+  header h2 a,
+  footer h2 a {
+    font-size: 1.5em;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+    font-size: 2em;
+    margin-right: 0.5em;
+    color: var(--clr-primary-cursed-black);
+    cursor: pointer;
+  }
+
+  /* *=========== mobile nav section css ===========* */
+  .mobile-nav-section {
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+
+  .mobile-nav-section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+  }
+
+  .mobile-nav-section ul li {
+    padding: 0.5em 1.5em;
+    border-radius: 0.5em;
+    border: 0.1em solid var(--clr-third-laddu-orange);
+  }
+
+  .mobile-nav-section ul li a {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--clr-primary-cursed-black);
+  }
+
+  /* *=========== header banner section css ===========* */
+
+  .header-banner {
+    padding: 2em;
+  }
+  .banner-text h1 {
+    font-size: 2.5em;
+  }
+
+  .banner-text {
+    width: 100%;
+  }
+
+  .banner-text p {
+    width: 22em;
+    margin: 0 auto;
+    margin-top: 1em;
+    font-size: 1.3em;
+  }
+
+  .primary-btn {
+    padding: 0.5em 1em;
+    font-size: 1.4em;
+    letter-spacing: normal;
+    margin-top: 1em;
+  }
+
+  /* *=========== feature section css ===========* */
+
+  .features-section {
+    padding: 2em;
+    flex-direction: column;
+  }
+
+  .feature-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature-img img {
+    width: 32em;
+    object-fit: contain;
+  }
+
+  .feature-text h3 {
+    font-size: 3em;
+  }
+
+  .feature-text p {
+    margin: 0.6em 0;
+  }
+
+  .feature-text button {
+    margin-top: 0.6em;
+  }
+
+  /* *=========== service section css ===========* */
+  .service-info-text {
+    width: 100%;
+  }
+  .service-info-section {
+    padding: 2em;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .architect-img {
+    width: 100%;
+  }
+
+  .architect-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .experience-display {
+    padding: 1.5em;
+    bottom: -8em;
+    margin-left: 8em;
+  }
+
+  .experience-display p {
+    font-size: 2.5em;
+  }
+
+  /* *=========== some facts section css ===========* */
+
+  .some-facts {
+    padding: 2em;
+    margin-top: 5em;
+  }
+
+  .some-facts h3 {
+    margin-top: 1em;
+  }
+
+  .facts-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3em;
+  }
+
+  .some-facts p {
+    width: 100%;
+    padding-right: 1em;
+  }
+
+  .single-fact {
+    width: 14em;
+    height: 15em;
+    margin-bottom: 1em;
+    padding: 1.5em 2em;
+  }
+
+  .single-fact span:nth-of-type(2) {
+    font-size: 1.2em;
+  }
+
+  /* *=========== sponsor section css ===========* */
+
+  .sponsor {
+    padding: 2em;
+  }
+
+  .sponsor p {
+    width: 21em;
+  }
+
+  .sponsor-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2em;
+  }
+
+  .sponsor-container img {
+    width: 6em;
+    height: 2.5em;
+    margin-left: 1.5em;
+    margin-top: 2em;
+  }
+
+  /* *=========== price list section css ===========* */
+
+  .price-list {
+    padding: 2em;
+  }
+
+  .price-list > p {
+    width: 21em;
+  }
+
+  .price-list-container {
+    flex-direction: column;
+  }
+
+  .single-price {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .single-price:nth-of-type(2) {
+    scale: 1;
+  }
+
+  /* *=========== footer section css ===========* */
+
+  footer {
+    padding: 2em;
+    flex-direction: column-reverse;
+    gap: 2em;
+  }
+
+  .footer-right {
+    width: 95%;
+  }
+
+  form input,
+  textarea {
+    width: 100%;
+  }
+
+  .footer-left {
+    width: 100%;
+  }
+
+  .footer-left h2 {
+    margin-top: 1em;
+  }
+
+  .footer-left p:nth-of-type(1) {
+    width: 100%;
+    padding-right: 2em;
+  }
+}
+
+/* *=========== tablet responsive section css ===========* */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* *=========== header section css ===========* */
+
+  .section-width {
+    width: 100%;
+  }
+
+  header {
+    padding: 2em;
+  }
+
+  header h2 a,
+  footer h2 a {
+    font-size: 1.8em;
+  }
+
+  .header-nav ul {
+    gap: 2.5em;
+  }
+
+  .header-nav li a {
+    font-size: 1.5em;
+  }
+
+  /* *=========== header banner section css ===========* */
+
+  .primary-btn {
+    padding: 1em;
+    font-size: 1.5em;
+    letter-spacing: normal;
+    margin-top: 1em;
+  }
+
+  .header-banner {
+    padding: 2em;
+  }
+
+  .banner-text {
+    width: 100%;
+  }
+
+  .banner-text h1 {
+    font-size: 3.5em;
+  }
+
+  .banner-text p {
+    width: 38em;
+    margin: 0 auto;
+    margin-top: 1em;
+    font-size: 1.4em;
+  }
+
+  /* *=========== feature section css ===========* */
+
+  .features-section {
+    padding: 2em;
+    flex-direction: column-reverse;
+  }
+
+  .feature-img {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+  }
+
+  .feature-img img {
+    width: 30em;
+    object-fit: contain;
+  }
+
+  .feature-text h3 {
+    font-size: 3em;
+  }
+
+  .feature-text p {
+    margin: 0.6em 0;
+  }
+
+  .feature-text button {
+    margin-top: 0.6em;
+  }
+
+  /* *=========== service section css ===========* */
+
+  .service-info-text {
+    width: 100%;
+  }
+
+  .service-info-section {
+    padding: 2em;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .architect-img {
+    width: 100%;
+  }
+
+  .architect-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .experience-display {
+    padding: 1.5em;
+    bottom: -8em;
+    margin-left: 8em;
+  }
+
+  .experience-display p {
+    font-size: 2.5em;
+  }
+
+  /* *=========== some facts section css ===========* */
+  .some-facts {
+    padding: 2em;
+  }
+
+  .some-facts h3 {
+    margin-top: 3em;
+  }
+
+  .some-facts p {
+    width: 100%;
+  }
+
+  .single-fact {
+    padding: 1.2em 1.8em;
+  }
+
+  .single-fact span:nth-of-type(1) {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  /* *=========== sponsor section css ===========* */
+
+  .sponsor {
+    padding: 2em;
+  }
+
+  .sponsor-container {
+    margin-top: 3em;
+  }
+
+  .sponsor-container img {
+    width: 8em;
+    height: 3em;
+  }
+
+  /* *=========== price list section css ===========* */
+
+  .price-list {
+    padding: 2em;
+    margin-top: 3em;
+  }
+
+  .price-list-container {
+    flex-wrap: wrap;
+    gap: 3em;
+  }
+
+  .single-price {
+    width: 46%;
+    margin-right: 0;
+  }
+
+  .single-price:nth-of-type(2) {
+    scale: 1;
+  }
+
+  /* *=========== footer section css ===========* */
+
+  footer {
+    padding: 2em;
+    gap: 2em;
+  }
+
+  form input,
+  textarea {
+    width: 80%;
+  }
+
+  .footer-left h2 {
+    margin-top: 1em;
+  }
+
+  .footer-left p:nth-of-type(1) {
+    width: 100%;
+    padding-right: 2em;
+  }
+}
+
+/* *=========== large devices responsive section css ===========* */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* *=========== header section css ===========* */
+
+  .section-width {
+    width: 100%;
+  }
+
+  header {
+    padding: 2em;
+  }
+
+  /* *=========== header banner section css ===========* */
+
+  .primary-btn {
+    padding: 1em 1.5em;
+    font-size: 1.7em;
+    letter-spacing: normal;
+    margin-top: 1em;
+  }
+
+  .header-banner {
+    padding: 2em;
+  }
+
+  /* *=========== feature section css ===========* */
+
+  .features-section {
+    padding: 2em;
+  }
+
+  .feature-img img {
+    width: 25em;
+    height: 25em;
+    object-fit: contain;
+  }
+
+  .feature-text p {
+    margin: 0.7em 0;
+  }
+
+  /* *=========== service section css ===========* */
+
+  .service-info-section {
+    padding: 2em;
+    align-items: center;
+  }
+
+  .architect-img {
+    width: 48%;
+    height: fit-content;
+  }
+
+  .architect-img img {
+    width: 100%;
+    object-fit: contain;
+    height: max-content;
+  }
+
+  .experience-display {
+    padding: 1.5em;
+    bottom: -3em;
+  }
+
+  .experience-display p {
+    font-size: 2.5em;
+  }
+
+  /* *=========== some facts section css ===========* */
+  .some-facts {
+    padding: 2em;
+  }
+
+  .some-facts h3 {
+    margin-top: 2em;
+  }
+
+  .some-facts p {
+    width: 100%;
+  }
+
+  .single-fact span:nth-of-type(1) {
+    margin-top: 0.5em;
+  }
+
+  /* *=========== sponsor section css ===========* */
+
+  .sponsor {
+    padding: 2em;
+  }
+
+  .sponsor-container {
+    margin-top: 3em;
+  }
+
+  .sponsor-container img {
+    width: 8em;
+    height: 3em;
+  }
+
+  /* *=========== price list section css ===========* */
+
+  .price-list {
+    padding: 2em;
+    margin-top: 3em;
+  }
+
+  .price-list-container {
+    gap: 3em;
+    margin-bottom: 8em;
+  }
+
+  .single-price {
+    margin-right: 0;
+    width: 26em;
+  }
+
+  /* *=========== footer section css ===========* */
+
+  footer {
+    padding: 2em;
+    gap: 10em;
+  }
+
+  .footer-left h2 {
+    margin-top: 1em;
+  }
+
+  .footer-left p:nth-of-type(1) {
+    width: 100%;
+  }
+}
+
+/* *=========== X - large devices responsive section css ===========* */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  header,
+  .header-banner,
+  .features-section,
+  .service-info-section,
+  .some-facts,
+  .sponsor,
+  .price-list,
+  footer {
+    padding: 4em 6em;
+  }
+}
